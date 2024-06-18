@@ -20,7 +20,7 @@ public class Bot extends TelegramLongPollingBot {
     private final Map<Long, Integer> userProgress = new HashMap<>();
     private final Map<Long, Boolean> waitingForCandidateInfo = new HashMap<>();
     private final DBManager dbManager = new DBManager();
-    private static final String ADMIN_CHAT_ID = "-1002232543668";
+    private static final String ADMIN_CHAT_ID = "your_chat_id";
 
     public Bot() {
         initializeQuestions();
@@ -179,12 +179,12 @@ public class Bot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "@oijava_bot";
+        return "@your_bot";
     }
 
     @Override
     public String getBotToken() {
-        return "7402238078:AAG6tBKAjg6i0DE2vvv7FFtwQWjmwUfX3A4";
+        return "YOUR_BOT_TOKEN";
     }
 
     @Override
